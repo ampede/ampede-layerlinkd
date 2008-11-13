@@ -1,0 +1,15 @@
+				<parameter name="Use Background Color" id="116" flags="0" value="0"/>
+				<parameter name="Background Color" id="117" flags="36864">
+					<parameter name="Red" id="1" flags="32784" value="1"/>
+					<parameter name="Green" id="2" flags="32784" value="1"/>
+					<parameter name="Blue" id="3" flags="32784" value="1"/>
+				</parameter>
+				<parameter name="Crop" id="112" flags="4096">
+					<parameter name="Left" id="1" flags="16" value="0"/>
+					<parameter name="Right" id="2" flags="16" value="0"/>
+					<parameter name="Bottom" id="3" flags="16" value="0"/>
+					<parameter name="Top" id="4" flags="16" value="0"/>
+				</parameter>
+				<parameter name="Replace Media File" id="118" flags="65552" value="0"/>
+			</parameter>
+		</clip>

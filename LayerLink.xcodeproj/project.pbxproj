@@ -1,0 +1,1955 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7802DBE206FE4CD300D68E00 /* PDFObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = 7802DBE106FE4CD300D68E00 /* PDFObjects.h */; };
+		7802DCF80700986600D68E00 /* PDFObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 7802DCF60700986600D68E00 /* PDFObject.h */; };
+		7802DCF90700986600D68E00 /* PDFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7802DCF70700986600D68E00 /* PDFObject.m */; };
+		7802DD560700A44C00D68E00 /* PDFNull.h in Headers */ = {isa = PBXBuildFile; fileRef = 7802DD540700A44C00D68E00 /* PDFNull.h */; };
+		7802DD570700A44C00D68E00 /* PDFNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 7802DD550700A44C00D68E00 /* PDFNull.m */; };
+		7809E18D0722E26D00DA9915 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		7809E1990722E28E00DA9915 /* AIDocument-Ragel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890839306FE1EB200F968F4 /* AIDocument-Ragel.h */; };
+		7809E19A0722E28F00DA9915 /* AIDocument-Ragel3.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890839906FE1EB200F968F4 /* AIDocument-Ragel3.h */; };
+		7809E19C0722E29500DA9915 /* AIDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 7890839E06FE1EB200F968F4 /* AIDocument.m */; };
+		7809E19D0722E29600DA9915 /* AIDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890839D06FE1EB200F968F4 /* AIDocument.h */; };
+		7809E19E0722E29700DA9915 /* grid_lines.h in Headers */ = {isa = PBXBuildFile; fileRef = 78F216BF0721A6BD008262BA /* grid_lines.h */; };
+		7809E1A00722E29800DA9915 /* AIDocument-Ragel4.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890839B06FE1EB200F968F4 /* AIDocument-Ragel4.h */; };
+		7809E1AE0722E2BE00DA9915 /* PDFLexerTokenEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 787BA67706FE296E00DEAD3F /* PDFLexerTokenEnumerator.m */; };
+		7809E1AF0722E2BF00DA9915 /* PDFLexerTokenEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 787BA67606FE296E00DEAD3F /* PDFLexerTokenEnumerator.h */; };
+		7809E1B00722E2BF00DA9915 /* PDFLexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083BB06FE1EB200F968F4 /* PDFLexer.m */; };
+		7809E1B10722E2C000DA9915 /* PDFLexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083BA06FE1EB200F968F4 /* PDFLexer.h */; };
+		7809E1B20722E2C100DA9915 /* LOG_PDFPARSING_CALLBACKS_IMP.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DC79CE0700DBDF00EE7C6E /* LOG_PDFPARSING_CALLBACKS_IMP.h */; };
+		7809E1B30722E2C100DA9915 /* PDFParsingVisitorProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 787BA66A06FE22E300DEAD3F /* PDFParsingVisitorProtocol.m */; };
+		7809E1B40722E2C200DA9915 /* PDFParsingVisitorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 787BA66906FE22E300DEAD3F /* PDFParsingVisitorProtocol.h */; };
+		7809E1B50722E2C300DA9915 /* PDFParsingProtocolDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083C406FE1EB200F968F4 /* PDFParsingProtocolDebug.h */; };
+		7809E1B60722E2C400DA9915 /* PDFParsingProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083C306FE1EB200F968F4 /* PDFParsingProtocol.m */; };
+		7809E1B70722E2C400DA9915 /* PDFParsingProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083C206FE1EB200F968F4 /* PDFParsingProtocol.h */; };
+		7809E1B80722E2C500DA9915 /* PDFStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DC807007039E1000EE7C6E /* PDFStreamParser.m */; };
+		7809E1B90722E2C600DA9915 /* PDFStreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DC806F07039E1000EE7C6E /* PDFStreamParser.h */; };
+		7809E1BA0722E2C700DA9915 /* PDFParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083C106FE1EB200F968F4 /* PDFParser.m */; };
+		7809E1BB0722E2C700DA9915 /* PDFParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083C006FE1EB200F968F4 /* PDFParser.h */; };
+		7809E1BC0722E2C800DA9915 /* PDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083B106FE1EB200F968F4 /* PDFDocument.m */; };
+		7809E1BD0722E2C900DA9915 /* PDFDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083B006FE1EB200F968F4 /* PDFDocument.h */; };
+		7809E1BE0722E2D900DA9915 /* BDAlias.h in Headers */ = {isa = PBXBuildFile; fileRef = 78F406C7070B6137000D72D1 /* BDAlias.h */; };
+		7809E1BF0722E2DA00DA9915 /* BDAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F406C8070B6137000D72D1 /* BDAlias.m */; };
+		7809E1C00722E2DD00DA9915 /* UKKQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083D806FE1EB200F968F4 /* UKKQueue.h */; };
+		7809E1C10722E2DE00DA9915 /* UKKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083D906FE1EB200F968F4 /* UKKQueue.m */; };
+		7809E1C60722E31E00DA9915 /* NSMutableArray+StackOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 787BA67306FE266200DEAD3F /* NSMutableArray+StackOperations.m */; };
+		7809E1C70722E31E00DA9915 /* NSMutableArray+StackOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = 787BA67206FE266200DEAD3F /* NSMutableArray+StackOperations.h */; };
+		7809E25F0722E4B500DA9915 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		7809E2600722E4B500DA9915 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		7809E28F0722E4B500DA9915 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		7809E2A80722E67100DA9915 /* LCmain.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083A306FE1EB200F968F4 /* LCmain.m */; };
+		7809E2BB0722E6AA00DA9915 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		7809E2C60722E6FB00DA9915 /* layerlinkd_LC.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7809E1890722E24500DA9915 /* layerlinkd_LC.bundle */; };
+		7809E33A0722F20100DA9915 /* layerlinkd_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 7809E1C40722E30600DA9915 /* layerlinkd_Prefix.pch */; };
+		7809E3430722F26100DA9915 /* layerlinkd_LC_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 7809E3420722F26100DA9915 /* layerlinkd_LC_Prefix.pch */; };
+		7809E4230722F37400DA9915 /* PDFText.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DC82D7070628C800EE7C6E /* PDFText.h */; };
+		7809E4240722F37400DA9915 /* PDFText.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DC82D8070628C800EE7C6E /* PDFText.m */; };
+		7809E4250722F37500DA9915 /* PDFInlineImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DC82AC0706246700EE7C6E /* PDFInlineImage.h */; };
+		7809E4260722F37600DA9915 /* PDFInlineImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DC82AD0706246700EE7C6E /* PDFInlineImage.m */; };
+		7809E4270722F37600DA9915 /* PDFOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DC7EBC0703824400EE7C6E /* PDFOperator.h */; };
+		7809E4280722F37700DA9915 /* PDFOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DC7EBD0703824400EE7C6E /* PDFOperator.m */; };
+		7809E4290722F37800DA9915 /* PDFObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = 7802DBE106FE4CD300D68E00 /* PDFObjects.h */; };
+		7809E42A0722F37900DA9915 /* PDFObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 7802DCF60700986600D68E00 /* PDFObject.h */; };
+		7809E42B0722F37900DA9915 /* PDFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7802DCF70700986600D68E00 /* PDFObject.m */; };
+		7809E42C0722F37A00DA9915 /* PDFNull.h in Headers */ = {isa = PBXBuildFile; fileRef = 7802DD540700A44C00D68E00 /* PDFNull.h */; };
+		7809E42D0722F37B00DA9915 /* PDFNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 7802DD550700A44C00D68E00 /* PDFNull.m */; };
+		7809E42E0722F37C00DA9915 /* PDFArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083A806FE1EB200F968F4 /* PDFArray.h */; };
+		7809E42F0722F37D00DA9915 /* PDFArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083A906FE1EB200F968F4 /* PDFArray.m */; };
+		7809E4300722F37E00DA9915 /* PDFBoolean.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083AA06FE1EB200F968F4 /* PDFBoolean.h */; };
+		7809E4310722F37E00DA9915 /* PDFBoolean.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083AB06FE1EB200F968F4 /* PDFBoolean.m */; };
+		7809E4320722F37F00DA9915 /* PDFComment.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083AC06FE1EB200F968F4 /* PDFComment.h */; };
+		7809E4330722F38000DA9915 /* PDFComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083AD06FE1EB200F968F4 /* PDFComment.m */; };
+		7809E4340722F38100DA9915 /* PDFDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083AE06FE1EB200F968F4 /* PDFDictionary.h */; };
+		7809E4350722F38100DA9915 /* PDFDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083AF06FE1EB200F968F4 /* PDFDictionary.m */; };
+		7809E4360722F38200DA9915 /* PDFIndirectObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083B206FE1EB200F968F4 /* PDFIndirectObject.h */; };
+		7809E4370722F38200DA9915 /* PDFIndirectObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083B306FE1EB200F968F4 /* PDFIndirectObject.m */; };
+		7809E4380722F38300DA9915 /* PDFIntegerNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083B406FE1EB200F968F4 /* PDFIntegerNumber.h */; };
+		7809E4390722F38400DA9915 /* PDFIntegerNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083B506FE1EB200F968F4 /* PDFIntegerNumber.m */; };
+		7809E43A0722F38500DA9915 /* PDFName.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083BC06FE1EB200F968F4 /* PDFName.h */; };
+		7809E43B0722F38600DA9915 /* PDFName.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083BD06FE1EB200F968F4 /* PDFName.m */; };
+		7809E43C0722F38700DA9915 /* PDFObjectReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083BE06FE1EB200F968F4 /* PDFObjectReference.h */; };
+		7809E43D0722F38700DA9915 /* PDFObjectReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083BF06FE1EB200F968F4 /* PDFObjectReference.m */; };
+		7809E43E0722F38800DA9915 /* PDFRealNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083C506FE1EB200F968F4 /* PDFRealNumber.h */; };
+		7809E43F0722F38900DA9915 /* PDFRealNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083C606FE1EB200F968F4 /* PDFRealNumber.m */; };
+		7809E4400722F38D00DA9915 /* PDFStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083C706FE1EB200F968F4 /* PDFStream.h */; };
+		7809E4410722F38D00DA9915 /* PDFStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083C806FE1EB200F968F4 /* PDFStream.m */; };
+		7809E4420722F38E00DA9915 /* PDFStreamData.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083C906FE1EB200F968F4 /* PDFStreamData.h */; };
+		7809E4430722F38F00DA9915 /* PDFStreamData.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083CA06FE1EB200F968F4 /* PDFStreamData.m */; };
+		7809E4440722F38F00DA9915 /* PDFString.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083CB06FE1EB200F968F4 /* PDFString.h */; };
+		7809E4450722F39000DA9915 /* PDFString.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083CC06FE1EB200F968F4 /* PDFString.m */; };
+		7809E4460722F39200DA9915 /* PDFToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083CD06FE1EB200F968F4 /* PDFToken.h */; };
+		7809E4470722F39200DA9915 /* PDFToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083CE06FE1EB200F968F4 /* PDFToken.m */; };
+		7809E4480722F39300DA9915 /* PDFTrailer.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083CF06FE1EB200F968F4 /* PDFTrailer.h */; };
+		7809E4490722F39400DA9915 /* PDFTrailer.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083D006FE1EB200F968F4 /* PDFTrailer.m */; };
+		7809E44A0722F39500DA9915 /* PDFXref.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083D106FE1EB200F968F4 /* PDFXref.h */; };
+		7809E44B0722F39600DA9915 /* PDFXref.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083D206FE1EB200F968F4 /* PDFXref.m */; };
+		7809E44C0722F39700DA9915 /* PDFXrefItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083D306FE1EB200F968F4 /* PDFXrefItem.h */; };
+		7809E44D0722F39700DA9915 /* PDFXrefItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083D406FE1EB200F968F4 /* PDFXrefItem.m */; };
+		7809E5180722FB0B00DA9915 /* LayerLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA61030711FF9800392C23 /* LayerLink.m */; };
+		7809E5190722FB0B00DA9915 /* LayerLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 78AA61020711FF9800392C23 /* LayerLink.h */; };
+		7813D6A507270DB3004036F1 /* ozxml.h in Headers */ = {isa = PBXBuildFile; fileRef = 7813D6A407270DB3004036F1 /* ozxml.h */; };
+		7831439106FE3393001FF99D /* PDFLexer-Ragel.rh in Sources */ = {isa = PBXBuildFile; fileRef = 7831434306FE3051001FF99D /* PDFLexer-Ragel.rh */; };
+		7857C6960716141A009F2D06 /* UKKQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083D806FE1EB200F968F4 /* UKKQueue.h */; };
+		7857C6970716141B009F2D06 /* UKKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083D906FE1EB200F968F4 /* UKKQueue.m */; };
+		787BA66B06FE22E300DEAD3F /* PDFParsingVisitorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 787BA66906FE22E300DEAD3F /* PDFParsingVisitorProtocol.h */; };
+		787BA66C06FE22E300DEAD3F /* PDFParsingVisitorProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 787BA66A06FE22E300DEAD3F /* PDFParsingVisitorProtocol.m */; };
+		787BA67406FE266200DEAD3F /* NSMutableArray+StackOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = 787BA67206FE266200DEAD3F /* NSMutableArray+StackOperations.h */; };
+		787BA67506FE266200DEAD3F /* NSMutableArray+StackOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 787BA67306FE266200DEAD3F /* NSMutableArray+StackOperations.m */; };
+		789083F206FE1EB200F968F4 /* PDFArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083A806FE1EB200F968F4 /* PDFArray.h */; };
+		789083F306FE1EB200F968F4 /* PDFArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083A906FE1EB200F968F4 /* PDFArray.m */; };
+		789083F406FE1EB200F968F4 /* PDFBoolean.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083AA06FE1EB200F968F4 /* PDFBoolean.h */; };
+		789083F506FE1EB200F968F4 /* PDFBoolean.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083AB06FE1EB200F968F4 /* PDFBoolean.m */; };
+		789083F606FE1EB200F968F4 /* PDFComment.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083AC06FE1EB200F968F4 /* PDFComment.h */; };
+		789083F706FE1EB200F968F4 /* PDFComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083AD06FE1EB200F968F4 /* PDFComment.m */; };
+		789083F806FE1EB200F968F4 /* PDFDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083AE06FE1EB200F968F4 /* PDFDictionary.h */; };
+		789083F906FE1EB200F968F4 /* PDFDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083AF06FE1EB200F968F4 /* PDFDictionary.m */; };
+		789083FC06FE1EB200F968F4 /* PDFIndirectObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083B206FE1EB200F968F4 /* PDFIndirectObject.h */; };
+		789083FD06FE1EB200F968F4 /* PDFIndirectObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083B306FE1EB200F968F4 /* PDFIndirectObject.m */; };
+		789083FE06FE1EB200F968F4 /* PDFIntegerNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083B406FE1EB200F968F4 /* PDFIntegerNumber.h */; };
+		789083FF06FE1EB200F968F4 /* PDFIntegerNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083B506FE1EB200F968F4 /* PDFIntegerNumber.m */; };
+		7890840606FE1EB200F968F4 /* PDFName.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083BC06FE1EB200F968F4 /* PDFName.h */; };
+		7890840706FE1EB200F968F4 /* PDFName.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083BD06FE1EB200F968F4 /* PDFName.m */; };
+		7890840806FE1EB200F968F4 /* PDFObjectReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083BE06FE1EB200F968F4 /* PDFObjectReference.h */; };
+		7890840906FE1EB200F968F4 /* PDFObjectReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083BF06FE1EB200F968F4 /* PDFObjectReference.m */; };
+		7890840C06FE1EB200F968F4 /* PDFParsingProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083C206FE1EB200F968F4 /* PDFParsingProtocol.h */; };
+		7890840D06FE1EB200F968F4 /* PDFParsingProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083C306FE1EB200F968F4 /* PDFParsingProtocol.m */; };
+		7890840E06FE1EB200F968F4 /* PDFParsingProtocolDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083C406FE1EB200F968F4 /* PDFParsingProtocolDebug.h */; };
+		7890840F06FE1EB200F968F4 /* PDFRealNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083C506FE1EB200F968F4 /* PDFRealNumber.h */; };
+		7890841006FE1EB200F968F4 /* PDFRealNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083C606FE1EB200F968F4 /* PDFRealNumber.m */; };
+		7890841106FE1EB200F968F4 /* PDFStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083C706FE1EB200F968F4 /* PDFStream.h */; };
+		7890841206FE1EB200F968F4 /* PDFStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083C806FE1EB200F968F4 /* PDFStream.m */; };
+		7890841306FE1EB200F968F4 /* PDFStreamData.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083C906FE1EB200F968F4 /* PDFStreamData.h */; };
+		7890841406FE1EB200F968F4 /* PDFStreamData.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083CA06FE1EB200F968F4 /* PDFStreamData.m */; };
+		7890841506FE1EB200F968F4 /* PDFString.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083CB06FE1EB200F968F4 /* PDFString.h */; };
+		7890841606FE1EB200F968F4 /* PDFString.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083CC06FE1EB200F968F4 /* PDFString.m */; };
+		7890841706FE1EB200F968F4 /* PDFToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083CD06FE1EB200F968F4 /* PDFToken.h */; };
+		7890841806FE1EB200F968F4 /* PDFToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083CE06FE1EB200F968F4 /* PDFToken.m */; };
+		7890841906FE1EB200F968F4 /* PDFTrailer.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083CF06FE1EB200F968F4 /* PDFTrailer.h */; };
+		7890841A06FE1EB200F968F4 /* PDFTrailer.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083D006FE1EB200F968F4 /* PDFTrailer.m */; };
+		7890841B06FE1EB200F968F4 /* PDFXref.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083D106FE1EB200F968F4 /* PDFXref.h */; };
+		7890841C06FE1EB200F968F4 /* PDFXref.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083D206FE1EB200F968F4 /* PDFXref.m */; };
+		7890841D06FE1EB200F968F4 /* PDFXrefItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083D306FE1EB200F968F4 /* PDFXrefItem.h */; };
+		7890841E06FE1EB200F968F4 /* PDFXrefItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083D406FE1EB200F968F4 /* PDFXrefItem.m */; };
+		7896C00406FE3E71004CD99E /* PDFLexer-Ragel.rl in Sources */ = {isa = PBXBuildFile; fileRef = 7896C00306FE3E71004CD99E /* PDFLexer-Ragel.rl */; };
+		7896C05D06FE42E3004CD99E /* PDFLexerTokenEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 787BA67706FE296E00DEAD3F /* PDFLexerTokenEnumerator.m */; };
+		7896C05E06FE42E4004CD99E /* PDFLexerTokenEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 787BA67606FE296E00DEAD3F /* PDFLexerTokenEnumerator.h */; };
+		7896C05F06FE42E4004CD99E /* PDFLexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083BB06FE1EB200F968F4 /* PDFLexer.m */; };
+		7896C06006FE42E5004CD99E /* PDFLexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083BA06FE1EB200F968F4 /* PDFLexer.h */; };
+		7896C08306FE4573004CD99E /* PDFDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083B006FE1EB200F968F4 /* PDFDocument.h */; };
+		7896C08406FE4573004CD99E /* PDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083B106FE1EB200F968F4 /* PDFDocument.m */; };
+		7896C0DD06FE4727004CD99E /* PDFParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083C006FE1EB200F968F4 /* PDFParser.h */; };
+		7896C0DE06FE4728004CD99E /* PDFParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 789083C106FE1EB200F968F4 /* PDFParser.m */; };
+		789A1EE80723440F00D18E70 /* UKUpdateChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 789083DA06FE1EB200F968F4 /* UKUpdateChecker.h */; };
+		78AA61040711FF9800392C23 /* LayerLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 78AA61020711FF9800392C23 /* LayerLink.h */; };
+		78AA61050711FF9800392C23 /* LayerLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA61030711FF9800392C23 /* LayerLink.m */; };
+		78DC79CF0700DBDF00EE7C6E /* LOG_PDFPARSING_CALLBACKS_IMP.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DC79CE0700DBDF00EE7C6E /* LOG_PDFPARSING_CALLBACKS_IMP.h */; };
+		78DC7EBE0703824400EE7C6E /* PDFOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DC7EBC0703824400EE7C6E /* PDFOperator.h */; };
+		78DC7EBF0703824400EE7C6E /* PDFOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DC7EBD0703824400EE7C6E /* PDFOperator.m */; };
+		78DC7F10070388B000EE7C6E /* PDFStreamLexer-Ragel.rh in Sources */ = {isa = PBXBuildFile; fileRef = 78DC7F0F070388B000EE7C6E /* PDFStreamLexer-Ragel.rh */; };
+		78DC7F4B070389B600EE7C6E /* PDFStreamLexer-Ragel.rl in Sources */ = {isa = PBXBuildFile; fileRef = 78DC7EFC0703857000EE7C6E /* PDFStreamLexer-Ragel.rl */; };
+		78DC807107039E1000EE7C6E /* PDFStreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DC806F07039E1000EE7C6E /* PDFStreamParser.h */; };
+		78DC807207039E1000EE7C6E /* PDFStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DC807007039E1000EE7C6E /* PDFStreamParser.m */; };
+		78DC82AE0706246700EE7C6E /* PDFInlineImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DC82AC0706246700EE7C6E /* PDFInlineImage.h */; };
+		78DC82AF0706246700EE7C6E /* PDFInlineImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DC82AD0706246700EE7C6E /* PDFInlineImage.m */; };
+		78DC82D9070628C800EE7C6E /* PDFText.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DC82D7070628C800EE7C6E /* PDFText.h */; };
+		78DC82DA070628C800EE7C6E /* PDFText.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DC82D8070628C800EE7C6E /* PDFText.m */; };
+		78F216C00721A6BD008262BA /* grid_lines.h in Headers */ = {isa = PBXBuildFile; fileRef = 78F216BF0721A6BD008262BA /* grid_lines.h */; };
+		78F406CC070B6137000D72D1 /* BDAlias.h in Headers */ = {isa = PBXBuildFile; fileRef = 78F406C7070B6137000D72D1 /* BDAlias.h */; };
+		78F406CD070B6137000D72D1 /* BDAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F406C8070B6137000D72D1 /* BDAlias.m */; };
+		78F4FE4907073D33000D72D1 /* AIDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890839D06FE1EB200F968F4 /* AIDocument.h */; };
+		78F4FE4A07073D33000D72D1 /* AIDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 7890839E06FE1EB200F968F4 /* AIDocument.m */; };
+		78F4FE84070743A1000D72D1 /* AIDocument-Ragel4.rl in Sources */ = {isa = PBXBuildFile; fileRef = 7890839C06FE1EB200F968F4 /* AIDocument-Ragel4.rl */; };
+		78F4FE85070743A1000D72D1 /* AIDocument-Ragel4.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890839B06FE1EB200F968F4 /* AIDocument-Ragel4.h */; };
+		78F4FE86070743A2000D72D1 /* AIDocument-Ragel3.rl in Sources */ = {isa = PBXBuildFile; fileRef = 7890839A06FE1EB200F968F4 /* AIDocument-Ragel3.rl */; };
+		78F4FE87070743A2000D72D1 /* AIDocument-Ragel3.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890839906FE1EB200F968F4 /* AIDocument-Ragel3.h */; };
+		78F4FE8A070743A4000D72D1 /* AIDocument-Ragel1.rl in Sources */ = {isa = PBXBuildFile; fileRef = 7890839606FE1EB200F968F4 /* AIDocument-Ragel1.rl */; };
+		78F4FE8B070743A4000D72D1 /* AIDocument-Ragel1.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890839506FE1EB200F968F4 /* AIDocument-Ragel1.h */; };
+		78F4FE8C070743A4000D72D1 /* AIDocument-Ragel.rl in Sources */ = {isa = PBXBuildFile; fileRef = 7890839406FE1EB200F968F4 /* AIDocument-Ragel.rl */; };
+		78F4FE8D070743A5000D72D1 /* AIDocument-Ragel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890839306FE1EB200F968F4 /* AIDocument-Ragel.h */; };
+		8D1107280486CEB800E47090 /* LayerLink_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32CA4F630368D1EE00C91783 /* LayerLink_Prefix.pch */; };
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		8E3BBCAF08230FE2003C8BDD /* LicenseControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3BBCAE08230FE2003C8BDD /* LicenseControl.framework */; };
+		8E3BBCB00823107C003C8BDD /* PDFStreamLexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DC7F00070385B600EE7C6E /* PDFStreamLexer.m */; };
+		8E3BBCB10823107E003C8BDD /* PDFStreamLexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DC7EFF070385B600EE7C6E /* PDFStreamLexer.h */; };
+		8E3BBCCC0823116B003C8BDD /* LicenseControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3BBCAE08230FE2003C8BDD /* LicenseControl.framework */; };
+		8EA1D446083A8E6400E9D4F7 /* AIDocument-Ragel1.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890839506FE1EB200F968F4 /* AIDocument-Ragel1.h */; };
+		8EE0F80A09F1EC9B002EF838 /* AIDocument-Ragel4.rl in Sources */ = {isa = PBXBuildFile; fileRef = 7890839C06FE1EB200F968F4 /* AIDocument-Ragel4.rl */; };
+		8EE0F80D09F1ECAE002EF838 /* AIDocument-Ragel.rl in Resources */ = {isa = PBXBuildFile; fileRef = 7890839406FE1EB200F968F4 /* AIDocument-Ragel.rl */; };
+		8EE0F81009F1ECBB002EF838 /* AIDocument-Ragel3.rl in Resources */ = {isa = PBXBuildFile; fileRef = 7890839A06FE1EB200F968F4 /* AIDocument-Ragel3.rl */; };
+		8EE0F81109F1ECBC002EF838 /* AIDocument-Ragel2.rl in Resources */ = {isa = PBXBuildFile; fileRef = 7890839806FE1EB200F968F4 /* AIDocument-Ragel2.rl */; };
+		8EE0F81309F1ECDC002EF838 /* PDFLexer-Ragel.rh in Resources */ = {isa = PBXBuildFile; fileRef = 7831434306FE3051001FF99D /* PDFLexer-Ragel.rh */; };
+		8EE0F81409F1ECDC002EF838 /* PDFLexer-Ragel.rl in Resources */ = {isa = PBXBuildFile; fileRef = 7896C00306FE3E71004CD99E /* PDFLexer-Ragel.rl */; };
+		8EE0F81609F1ECE2002EF838 /* PDFStreamLexer-Ragel.rl in Resources */ = {isa = PBXBuildFile; fileRef = 78DC7EFC0703857000EE7C6E /* PDFStreamLexer-Ragel.rl */; };
+		8EE0F83309F1ED6A002EF838 /* AIDocument-Ragel2.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890839706FE1EB200F968F4 /* AIDocument-Ragel2.h */; };
+		8EE0F83409F1ED88002EF838 /* PDFStreamLexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DC7F00070385B600EE7C6E /* PDFStreamLexer.m */; };
+		8EE0F83509F1ED88002EF838 /* PDFStreamLexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DC7EFF070385B600EE7C6E /* PDFStreamLexer.h */; };
+		8EE0F83A09F1EF6C002EF838 /* PDFStreamLexer-Ragel.rh in Resources */ = {isa = PBXBuildFile; fileRef = 78DC7F0F070388B000EE7C6E /* PDFStreamLexer-Ragel.rh */; };
+		8EE0F85809F1EFE9002EF838 /* PDFStreamLexer-Ragel.rl in Sources */ = {isa = PBXBuildFile; fileRef = 78DC7EFC0703857000EE7C6E /* PDFStreamLexer-Ragel.rl */; };
+		8EE0F85909F1EFF1002EF838 /* PDFLexer-Ragel.rl in Sources */ = {isa = PBXBuildFile; fileRef = 7896C00306FE3E71004CD99E /* PDFLexer-Ragel.rl */; };
+		8EE0F85A09F1EFFB002EF838 /* AIDocument-Ragel3.rl in Sources */ = {isa = PBXBuildFile; fileRef = 7890839A06FE1EB200F968F4 /* AIDocument-Ragel3.rl */; };
+		8EE0F85B09F1EFFF002EF838 /* AIDocument-Ragel2.rl in Sources */ = {isa = PBXBuildFile; fileRef = 7890839806FE1EB200F968F4 /* AIDocument-Ragel2.rl */; };
+		8EE0F85C09F1F002002EF838 /* AIDocument-Ragel.rl in Sources */ = {isa = PBXBuildFile; fileRef = 7890839406FE1EB200F968F4 /* AIDocument-Ragel.rl */; };
+		8EE0F91D09F20975002EF838 /* AIDocument-Ragel1.rl in Resources */ = {isa = PBXBuildFile; fileRef = 7890839606FE1EB200F968F4 /* AIDocument-Ragel1.rl */; };
+		8EE0F92309F20989002EF838 /* AIDocument-Ragel1.rl in Sources */ = {isa = PBXBuildFile; fileRef = 7890839606FE1EB200F968F4 /* AIDocument-Ragel1.rl */; };
+		8EF8306A083ADF000089191A /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EF83069083ADF000089191A /* libz.1.dylib */; };
+		8EF8306B083ADF000089191A /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EF83069083ADF000089191A /* libz.1.dylib */; };
+		8EF8306E083ADF400089191A /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EF83069083ADF000089191A /* libz.1.dylib */; };
+		8EF830CF083C3EF10089191A /* LicenseControl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8E3BBCAE08230FE2003C8BDD /* LicenseControl.framework */; };
+		8EFA49AE0843DEFB00D22EC1 /* version.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 789083DC06FE1EB200F968F4 /* version.plist */; };
+		8EFA49AF0843DF0400D22EC1 /* version.plist in Resources */ = {isa = PBXBuildFile; fileRef = 789083DC06FE1EB200F968F4 /* version.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		7809E2960722E4B500DA9915 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.rl";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE).m",
+			);
+			script = "echo \"*.rl file processed\"\n/usr/local/bin/ragel $(INPUT_FILE_BASE).rl -c -G2 -o $(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE).m\n/usr/local/bin/ragel $(INPUT_FILE_BASE).rl -V -o $(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE).dot";
+		};
+		7809E2970722E4B500DA9915 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.rh";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE).h",
+			);
+			script = "echo \"*.rh file processed\"\n/usr/local/bin/ragel $(INPUT_FILE_BASE).rh -c -G2 -o $(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE).h";
+		};
+		8EE0F77B09F1D27B002EF838 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.rl";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "";
+		};
+		8EE0F77F09F1D2B8002EF838 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.rh";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "";
+		};
+		8EE0F80409F1EB43002EF838 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.rl";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE).m",
+			);
+			script = "echo \"*.rl file processed\"\n/Users/ocean/bin/ragel ${INPUT_FILE_BASE}.rl -c -G2 -o ${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.m\n/Users/ocean/bin/ragel ${INPUT_FILE_BASE}.rl -V -o ${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.dot";
+		};
+		8EE0F80509F1EB68002EF838 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.rh";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE).h",
+			);
+			script = "echo \"*.rh file processed\"\n/Users/ocean/bin/ragel ${INPUT_FILE_BASE}.rh -c -G2 -o ${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.h";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXBuildStyle section */
+		4A9504CCFFE6A4B311CA0CBA /* Development */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				TEST_AFTER_BUILD = NO;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		4A9504CDFFE6A4B311CA0CBA /* Deployment */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		8EFA499D0843AF9700D22EC1 /* Deployment NFR */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				ZERO_LINK = NO;
+			};
+			name = "Deployment NFR";
+		};
+		E9AD241B056E4CBD00C89394 /* Test */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				TEST_AFTER_BUILD = YES;
+				ZERO_LINK = NO;
+			};
+			name = Test;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		7809E2A00722E59D00DA9915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7809E1880722E24500DA9915;
+			remoteInfo = layerlinkd;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7809E2940722E4B500DA9915 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C8BCAF07207139006C4379 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF830CD083C3E650089191A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8EF830CF083C3EF10089191A /* LicenseControl.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EFA49AC0843DEBE00D22EC1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents;
+			dstSubfolderSpec = 1;
+			files = (
+				8EFA49AE0843DEFB00D22EC1 /* version.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* LayerLink_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerLink_Prefix.pch; sourceTree = "<group>"; };
+		7802DBE106FE4CD300D68E00 /* PDFObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFObjects.h; sourceTree = "<group>"; };
+		7802DCF60700986600D68E00 /* PDFObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFObject.h; sourceTree = "<group>"; };
+		7802DCF70700986600D68E00 /* PDFObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFObject.m; sourceTree = "<group>"; };
+		7802DD540700A44C00D68E00 /* PDFNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFNull.h; sourceTree = "<group>"; };
+		7802DD550700A44C00D68E00 /* PDFNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFNull.m; sourceTree = "<group>"; };
+		7809E1890722E24500DA9915 /* layerlinkd_LC.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = layerlinkd_LC.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7809E18A0722E24500DA9915 /* layerlinkd-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "layerlinkd-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7809E1C40722E30600DA9915 /* layerlinkd_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = layerlinkd_Prefix.pch; sourceTree = "<group>"; };
+		7809E2980722E4B500DA9915 /* layerlinkd.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = layerlinkd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7809E29A0722E4B500DA9915 /* LCinfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LCinfo.plist; sourceTree = SOURCE_ROOT; };
+		7809E3420722F26100DA9915 /* layerlinkd_LC_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = layerlinkd_LC_Prefix.pch; sourceTree = "<group>"; };
+		7813D6A407270DB3004036F1 /* ozxml.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ozxml.h; sourceTree = "<group>"; };
+		7831434306FE3051001FF99D /* PDFLexer-Ragel.rh */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "PDFLexer-Ragel.rh"; sourceTree = "<group>"; };
+		787BA66906FE22E300DEAD3F /* PDFParsingVisitorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFParsingVisitorProtocol.h; sourceTree = "<group>"; };
+		787BA66A06FE22E300DEAD3F /* PDFParsingVisitorProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFParsingVisitorProtocol.m; sourceTree = "<group>"; };
+		787BA67206FE266200DEAD3F /* NSMutableArray+StackOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+StackOperations.h"; sourceTree = "<group>"; };
+		787BA67306FE266200DEAD3F /* NSMutableArray+StackOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+StackOperations.m"; sourceTree = "<group>"; };
+		787BA67606FE296E00DEAD3F /* PDFLexerTokenEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFLexerTokenEnumerator.h; sourceTree = "<group>"; };
+		787BA67706FE296E00DEAD3F /* PDFLexerTokenEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFLexerTokenEnumerator.m; sourceTree = "<group>"; };
+		7890839306FE1EB200F968F4 /* AIDocument-Ragel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "AIDocument-Ragel.h"; sourceTree = SOURCE_ROOT; };
+		7890839406FE1EB200F968F4 /* AIDocument-Ragel.rl */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "AIDocument-Ragel.rl"; sourceTree = SOURCE_ROOT; };
+		7890839506FE1EB200F968F4 /* AIDocument-Ragel1.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "AIDocument-Ragel1.h"; sourceTree = SOURCE_ROOT; };
+		7890839606FE1EB200F968F4 /* AIDocument-Ragel1.rl */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "AIDocument-Ragel1.rl"; sourceTree = SOURCE_ROOT; };
+		7890839706FE1EB200F968F4 /* AIDocument-Ragel2.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "AIDocument-Ragel2.h"; sourceTree = SOURCE_ROOT; };
+		7890839806FE1EB200F968F4 /* AIDocument-Ragel2.rl */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "AIDocument-Ragel2.rl"; sourceTree = SOURCE_ROOT; };
+		7890839906FE1EB200F968F4 /* AIDocument-Ragel3.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "AIDocument-Ragel3.h"; sourceTree = SOURCE_ROOT; };
+		7890839A06FE1EB200F968F4 /* AIDocument-Ragel3.rl */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "AIDocument-Ragel3.rl"; sourceTree = SOURCE_ROOT; };
+		7890839B06FE1EB200F968F4 /* AIDocument-Ragel4.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "AIDocument-Ragel4.h"; sourceTree = SOURCE_ROOT; };
+		7890839C06FE1EB200F968F4 /* AIDocument-Ragel4.rl */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "AIDocument-Ragel4.rl"; sourceTree = SOURCE_ROOT; };
+		7890839D06FE1EB200F968F4 /* AIDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AIDocument.h; sourceTree = SOURCE_ROOT; };
+		7890839E06FE1EB200F968F4 /* AIDocument.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AIDocument.m; sourceTree = SOURCE_ROOT; };
+		7890839F06FE1EB200F968F4 /* AILayer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AILayer.h; sourceTree = SOURCE_ROOT; };
+		789083A006FE1EB200F968F4 /* AILayer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AILayer.m; sourceTree = SOURCE_ROOT; };
+		789083A106FE1EB200F968F4 /* AIPage.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AIPage.h; sourceTree = SOURCE_ROOT; };
+		789083A206FE1EB200F968F4 /* AIPage.rl */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = AIPage.rl; sourceTree = SOURCE_ROOT; };
+		789083A306FE1EB200F968F4 /* LCmain.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCmain.m; sourceTree = SOURCE_ROOT; };
+		789083A406FE1EB200F968F4 /* LicenseAgreement.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = LicenseAgreement.rtfd; sourceTree = SOURCE_ROOT; };
+		789083A506FE1EB200F968F4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = SOURCE_ROOT; };
+		789083A606FE1EB200F968F4 /* MacPAD.url */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = MacPAD.url; sourceTree = SOURCE_ROOT; };
+		789083A806FE1EB200F968F4 /* PDFArray.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFArray.h; sourceTree = SOURCE_ROOT; };
+		789083A906FE1EB200F968F4 /* PDFArray.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFArray.m; sourceTree = SOURCE_ROOT; };
+		789083AA06FE1EB200F968F4 /* PDFBoolean.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFBoolean.h; sourceTree = SOURCE_ROOT; };
+		789083AB06FE1EB200F968F4 /* PDFBoolean.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFBoolean.m; sourceTree = SOURCE_ROOT; };
+		789083AC06FE1EB200F968F4 /* PDFComment.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFComment.h; sourceTree = SOURCE_ROOT; };
+		789083AD06FE1EB200F968F4 /* PDFComment.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFComment.m; sourceTree = SOURCE_ROOT; };
+		789083AE06FE1EB200F968F4 /* PDFDictionary.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFDictionary.h; sourceTree = SOURCE_ROOT; };
+		789083AF06FE1EB200F968F4 /* PDFDictionary.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFDictionary.m; sourceTree = SOURCE_ROOT; };
+		789083B006FE1EB200F968F4 /* PDFDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFDocument.h; sourceTree = SOURCE_ROOT; };
+		789083B106FE1EB200F968F4 /* PDFDocument.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFDocument.m; sourceTree = SOURCE_ROOT; };
+		789083B206FE1EB200F968F4 /* PDFIndirectObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFIndirectObject.h; sourceTree = SOURCE_ROOT; };
+		789083B306FE1EB200F968F4 /* PDFIndirectObject.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFIndirectObject.m; sourceTree = SOURCE_ROOT; };
+		789083B406FE1EB200F968F4 /* PDFIntegerNumber.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFIntegerNumber.h; sourceTree = SOURCE_ROOT; };
+		789083B506FE1EB200F968F4 /* PDFIntegerNumber.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFIntegerNumber.m; sourceTree = SOURCE_ROOT; };
+		789083BA06FE1EB200F968F4 /* PDFLexer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFLexer.h; sourceTree = SOURCE_ROOT; };
+		789083BB06FE1EB200F968F4 /* PDFLexer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFLexer.m; sourceTree = SOURCE_ROOT; };
+		789083BC06FE1EB200F968F4 /* PDFName.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFName.h; sourceTree = SOURCE_ROOT; };
+		789083BD06FE1EB200F968F4 /* PDFName.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFName.m; sourceTree = SOURCE_ROOT; };
+		789083BE06FE1EB200F968F4 /* PDFObjectReference.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFObjectReference.h; sourceTree = SOURCE_ROOT; };
+		789083BF06FE1EB200F968F4 /* PDFObjectReference.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFObjectReference.m; sourceTree = SOURCE_ROOT; };
+		789083C006FE1EB200F968F4 /* PDFParser.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFParser.h; sourceTree = SOURCE_ROOT; };
+		789083C106FE1EB200F968F4 /* PDFParser.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFParser.m; sourceTree = SOURCE_ROOT; };
+		789083C206FE1EB200F968F4 /* PDFParsingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFParsingProtocol.h; sourceTree = SOURCE_ROOT; };
+		789083C306FE1EB200F968F4 /* PDFParsingProtocol.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFParsingProtocol.m; sourceTree = SOURCE_ROOT; };
+		789083C406FE1EB200F968F4 /* PDFParsingProtocolDebug.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFParsingProtocolDebug.h; sourceTree = SOURCE_ROOT; };
+		789083C506FE1EB200F968F4 /* PDFRealNumber.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFRealNumber.h; sourceTree = SOURCE_ROOT; };
+		789083C606FE1EB200F968F4 /* PDFRealNumber.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFRealNumber.m; sourceTree = SOURCE_ROOT; };
+		789083C706FE1EB200F968F4 /* PDFStream.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFStream.h; sourceTree = SOURCE_ROOT; };
+		789083C806FE1EB200F968F4 /* PDFStream.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFStream.m; sourceTree = SOURCE_ROOT; };
+		789083C906FE1EB200F968F4 /* PDFStreamData.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFStreamData.h; sourceTree = SOURCE_ROOT; };
+		789083CA06FE1EB200F968F4 /* PDFStreamData.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFStreamData.m; sourceTree = SOURCE_ROOT; };
+		789083CB06FE1EB200F968F4 /* PDFString.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFString.h; sourceTree = SOURCE_ROOT; };
+		789083CC06FE1EB200F968F4 /* PDFString.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFString.m; sourceTree = SOURCE_ROOT; };
+		789083CD06FE1EB200F968F4 /* PDFToken.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFToken.h; sourceTree = SOURCE_ROOT; };
+		789083CE06FE1EB200F968F4 /* PDFToken.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFToken.m; sourceTree = SOURCE_ROOT; };
+		789083CF06FE1EB200F968F4 /* PDFTrailer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFTrailer.h; sourceTree = SOURCE_ROOT; };
+		789083D006FE1EB200F968F4 /* PDFTrailer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFTrailer.m; sourceTree = SOURCE_ROOT; };
+		789083D106FE1EB200F968F4 /* PDFXref.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFXref.h; sourceTree = SOURCE_ROOT; };
+		789083D206FE1EB200F968F4 /* PDFXref.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFXref.m; sourceTree = SOURCE_ROOT; };
+		789083D306FE1EB200F968F4 /* PDFXrefItem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PDFXrefItem.h; sourceTree = SOURCE_ROOT; };
+		789083D406FE1EB200F968F4 /* PDFXrefItem.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PDFXrefItem.m; sourceTree = SOURCE_ROOT; };
+		789083D506FE1EB200F968F4 /* UKFeedbackProvider.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = UKFeedbackProvider.h; sourceTree = SOURCE_ROOT; };
+		789083D606FE1EB200F968F4 /* UKFeedbackProvider.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = UKFeedbackProvider.m; sourceTree = SOURCE_ROOT; };
+		789083D706FE1EB200F968F4 /* UKKQueue Readme.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "UKKQueue Readme.txt"; sourceTree = SOURCE_ROOT; };
+		789083D806FE1EB200F968F4 /* UKKQueue.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = UKKQueue.h; sourceTree = SOURCE_ROOT; };
+		789083D906FE1EB200F968F4 /* UKKQueue.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = UKKQueue.m; sourceTree = SOURCE_ROOT; };
+		789083DA06FE1EB200F968F4 /* UKUpdateChecker.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = UKUpdateChecker.h; sourceTree = SOURCE_ROOT; };
+		789083DB06FE1EB200F968F4 /* UKUpdateChecker.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = UKUpdateChecker.m; sourceTree = SOURCE_ROOT; };
+		789083DC06FE1EB200F968F4 /* version.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = version.plist; sourceTree = SOURCE_ROOT; };
+		7896C00306FE3E71004CD99E /* PDFLexer-Ragel.rl */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "PDFLexer-Ragel.rl"; sourceTree = "<group>"; };
+		789A1EE60723433300D18E70 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = /Users/bizman/Desktop/NiftyFeatures/English.lproj/UKUpdateChecker.strings; sourceTree = "<absolute>"; };
+		78AA61020711FF9800392C23 /* LayerLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerLink.h; sourceTree = "<group>"; };
+		78AA61030711FF9800392C23 /* LayerLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerLink.m; sourceTree = "<group>"; };
+		78DC79CE0700DBDF00EE7C6E /* LOG_PDFPARSING_CALLBACKS_IMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOG_PDFPARSING_CALLBACKS_IMP.h; sourceTree = "<group>"; };
+		78DC7EBC0703824400EE7C6E /* PDFOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFOperator.h; sourceTree = "<group>"; };
+		78DC7EBD0703824400EE7C6E /* PDFOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFOperator.m; sourceTree = "<group>"; };
+		78DC7EFC0703857000EE7C6E /* PDFStreamLexer-Ragel.rl */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "PDFStreamLexer-Ragel.rl"; sourceTree = "<group>"; };
+		78DC7EFF070385B600EE7C6E /* PDFStreamLexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFStreamLexer.h; sourceTree = "<group>"; };
+		78DC7F00070385B600EE7C6E /* PDFStreamLexer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFStreamLexer.m; sourceTree = "<group>"; };
+		78DC7F0F070388B000EE7C6E /* PDFStreamLexer-Ragel.rh */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "PDFStreamLexer-Ragel.rh"; sourceTree = "<group>"; };
+		78DC806F07039E1000EE7C6E /* PDFStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFStreamParser.h; sourceTree = "<group>"; };
+		78DC807007039E1000EE7C6E /* PDFStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFStreamParser.m; sourceTree = "<group>"; };
+		78DC82AC0706246700EE7C6E /* PDFInlineImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFInlineImage.h; sourceTree = "<group>"; };
+		78DC82AD0706246700EE7C6E /* PDFInlineImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFInlineImage.m; sourceTree = "<group>"; };
+		78DC82D7070628C800EE7C6E /* PDFText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFText.h; sourceTree = "<group>"; };
+		78DC82D8070628C800EE7C6E /* PDFText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFText.m; sourceTree = "<group>"; };
+		78F216BF0721A6BD008262BA /* grid_lines.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = grid_lines.h; sourceTree = "<group>"; };
+		78F406C6070B6137000D72D1 /* About BDAlias.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "About BDAlias.rtf"; sourceTree = "<group>"; };
+		78F406C7070B6137000D72D1 /* BDAlias.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = BDAlias.h; sourceTree = "<group>"; };
+		78F406C8070B6137000D72D1 /* BDAlias.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = BDAlias.m; sourceTree = "<group>"; };
+		78F406C9070B6137000D72D1 /* BDAlias.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = BDAlias.rtf; sourceTree = "<group>"; };
+		78F406CA070B6137000D72D1 /* License.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = License.rtf; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* LayerLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayerLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E3BBCAE08230FE2003C8BDD /* LicenseControl.framework */ = {isa = PBXFileReference; comments = "1.64
+"; explicitFileType = wrapper.framework; name = LicenseControl.framework; path = /Users/ocean/Library/Frameworks/LicenseControl.framework; sourceTree = "<absolute>"; };
+		8EA1D422083A876700E9D4F7 /* Rakefile */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		8EF83069083ADF000089191A /* libz.1.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/lib/libz.1.dylib; sourceTree = "<absolute>"; };
+		E9AD241F056E4CF300C89394 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = "~/Library/Frameworks/SenTestingKit.framework"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7809E1870722E24500DA9915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7809E18D0722E26D00DA9915 /* Cocoa.framework in Frameworks */,
+				8E3BBCAF08230FE2003C8BDD /* LicenseControl.framework in Frameworks */,
+				8EF8306E083ADF400089191A /* libz.1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7809E28E0722E4B500DA9915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7809E28F0722E4B500DA9915 /* Cocoa.framework in Frameworks */,
+				8E3BBCCC0823116B003C8BDD /* LicenseControl.framework in Frameworks */,
+				8EF8306A083ADF000089191A /* libz.1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				8EF8306B083ADF000089191A /* libz.1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				78AA61020711FF9800392C23 /* LayerLink.h */,
+				78AA61030711FF9800392C23 /* LayerLink.m */,
+				7890842C06FE1ED300F968F4 /* Illustrator Classes */,
+				78DC7E500703468F00EE7C6E /* PDF Classes */,
+				7890842906FE1EC100F968F4 /* Third-party Classes */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EF83069083ADF000089191A /* libz.1.dylib */,
+				8E3BBCAE08230FE2003C8BDD /* LicenseControl.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				E9AD241F056E4CF300C89394 /* SenTestingKit.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* LayerLink.app */,
+				7809E2980722E4B500DA9915 /* layerlinkd.app */,
+				7809E1890722E24500DA9915 /* layerlinkd_LC.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* LayerLink */ = {
+			isa = PBXGroup;
+			children = (
+				8EA1D422083A876700E9D4F7 /* Rakefile */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				7809E18A0722E24500DA9915 /* layerlinkd-Info.plist */,
+			);
+			name = LayerLink;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* LayerLink_Prefix.pch */,
+				7809E1C40722E30600DA9915 /* layerlinkd_Prefix.pch */,
+				7809E3420722F26100DA9915 /* layerlinkd_LC_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				789083A306FE1EB200F968F4 /* LCmain.m */,
+				787BA67206FE266200DEAD3F /* NSMutableArray+StackOperations.h */,
+				787BA67306FE266200DEAD3F /* NSMutableArray+StackOperations.m */,
+				789083DC06FE1EB200F968F4 /* version.plist */,
+				789083A406FE1EB200F968F4 /* LicenseAgreement.rtfd */,
+				789083A506FE1EB200F968F4 /* Localizable.strings */,
+				789083A606FE1EB200F968F4 /* MacPAD.url */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				789A1EE50723433300D18E70 /* UKUpdateChecker.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				7809E29A0722E4B500DA9915 /* LCinfo.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7890842906FE1EC100F968F4 /* Third-party Classes */ = {
+			isa = PBXGroup;
+			children = (
+				78F406C6070B6137000D72D1 /* About BDAlias.rtf */,
+				78F406C9070B6137000D72D1 /* BDAlias.rtf */,
+				78F406CA070B6137000D72D1 /* License.rtf */,
+				78F406C7070B6137000D72D1 /* BDAlias.h */,
+				78F406C8070B6137000D72D1 /* BDAlias.m */,
+				789083D506FE1EB200F968F4 /* UKFeedbackProvider.h */,
+				789083D606FE1EB200F968F4 /* UKFeedbackProvider.m */,
+				789083D706FE1EB200F968F4 /* UKKQueue Readme.txt */,
+				789083D806FE1EB200F968F4 /* UKKQueue.h */,
+				789083D906FE1EB200F968F4 /* UKKQueue.m */,
+				789083DA06FE1EB200F968F4 /* UKUpdateChecker.h */,
+				789083DB06FE1EB200F968F4 /* UKUpdateChecker.m */,
+			);
+			name = "Third-party Classes";
+			sourceTree = "<group>";
+		};
+		7890842C06FE1ED300F968F4 /* Illustrator Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7813D6A407270DB3004036F1 /* ozxml.h */,
+				7890839306FE1EB200F968F4 /* AIDocument-Ragel.h */,
+				7890839406FE1EB200F968F4 /* AIDocument-Ragel.rl */,
+				7890839506FE1EB200F968F4 /* AIDocument-Ragel1.h */,
+				7890839606FE1EB200F968F4 /* AIDocument-Ragel1.rl */,
+				7890839706FE1EB200F968F4 /* AIDocument-Ragel2.h */,
+				7890839806FE1EB200F968F4 /* AIDocument-Ragel2.rl */,
+				7890839906FE1EB200F968F4 /* AIDocument-Ragel3.h */,
+				7890839A06FE1EB200F968F4 /* AIDocument-Ragel3.rl */,
+				7890839B06FE1EB200F968F4 /* AIDocument-Ragel4.h */,
+				7890839C06FE1EB200F968F4 /* AIDocument-Ragel4.rl */,
+				78F216BF0721A6BD008262BA /* grid_lines.h */,
+				7890839D06FE1EB200F968F4 /* AIDocument.h */,
+				7890839E06FE1EB200F968F4 /* AIDocument.m */,
+				7890839F06FE1EB200F968F4 /* AILayer.h */,
+				789083A006FE1EB200F968F4 /* AILayer.m */,
+				789083A106FE1EB200F968F4 /* AIPage.h */,
+				789083A206FE1EB200F968F4 /* AIPage.rl */,
+			);
+			name = "Illustrator Classes";
+			sourceTree = "<group>";
+		};
+		7890842F06FE1F1000F968F4 /* PDF Objects */ = {
+			isa = PBXGroup;
+			children = (
+				78DC82D7070628C800EE7C6E /* PDFText.h */,
+				78DC82D8070628C800EE7C6E /* PDFText.m */,
+				78DC82AC0706246700EE7C6E /* PDFInlineImage.h */,
+				78DC82AD0706246700EE7C6E /* PDFInlineImage.m */,
+				78DC7EBC0703824400EE7C6E /* PDFOperator.h */,
+				78DC7EBD0703824400EE7C6E /* PDFOperator.m */,
+				7802DBE106FE4CD300D68E00 /* PDFObjects.h */,
+				7802DCF60700986600D68E00 /* PDFObject.h */,
+				7802DCF70700986600D68E00 /* PDFObject.m */,
+				7802DD540700A44C00D68E00 /* PDFNull.h */,
+				7802DD550700A44C00D68E00 /* PDFNull.m */,
+				789083A806FE1EB200F968F4 /* PDFArray.h */,
+				789083A906FE1EB200F968F4 /* PDFArray.m */,
+				789083AA06FE1EB200F968F4 /* PDFBoolean.h */,
+				789083AB06FE1EB200F968F4 /* PDFBoolean.m */,
+				789083AC06FE1EB200F968F4 /* PDFComment.h */,
+				789083AD06FE1EB200F968F4 /* PDFComment.m */,
+				789083AE06FE1EB200F968F4 /* PDFDictionary.h */,
+				789083AF06FE1EB200F968F4 /* PDFDictionary.m */,
+				789083B206FE1EB200F968F4 /* PDFIndirectObject.h */,
+				789083B306FE1EB200F968F4 /* PDFIndirectObject.m */,
+				789083B406FE1EB200F968F4 /* PDFIntegerNumber.h */,
+				789083B506FE1EB200F968F4 /* PDFIntegerNumber.m */,
+				789083BC06FE1EB200F968F4 /* PDFName.h */,
+				789083BD06FE1EB200F968F4 /* PDFName.m */,
+				789083BE06FE1EB200F968F4 /* PDFObjectReference.h */,
+				789083BF06FE1EB200F968F4 /* PDFObjectReference.m */,
+				789083C506FE1EB200F968F4 /* PDFRealNumber.h */,
+				789083C606FE1EB200F968F4 /* PDFRealNumber.m */,
+				789083C706FE1EB200F968F4 /* PDFStream.h */,
+				789083C806FE1EB200F968F4 /* PDFStream.m */,
+				789083C906FE1EB200F968F4 /* PDFStreamData.h */,
+				789083CA06FE1EB200F968F4 /* PDFStreamData.m */,
+				789083CB06FE1EB200F968F4 /* PDFString.h */,
+				789083CC06FE1EB200F968F4 /* PDFString.m */,
+				789083CD06FE1EB200F968F4 /* PDFToken.h */,
+				789083CE06FE1EB200F968F4 /* PDFToken.m */,
+				789083CF06FE1EB200F968F4 /* PDFTrailer.h */,
+				789083D006FE1EB200F968F4 /* PDFTrailer.m */,
+				789083D106FE1EB200F968F4 /* PDFXref.h */,
+				789083D206FE1EB200F968F4 /* PDFXref.m */,
+				789083D306FE1EB200F968F4 /* PDFXrefItem.h */,
+				789083D406FE1EB200F968F4 /* PDFXrefItem.m */,
+			);
+			name = "PDF Objects";
+			sourceTree = "<group>";
+		};
+		78DC7E500703468F00EE7C6E /* PDF Classes */ = {
+			isa = PBXGroup;
+			children = (
+				789083B006FE1EB200F968F4 /* PDFDocument.h */,
+				789083B106FE1EB200F968F4 /* PDFDocument.m */,
+				789083C006FE1EB200F968F4 /* PDFParser.h */,
+				789083C106FE1EB200F968F4 /* PDFParser.m */,
+				78DC806F07039E1000EE7C6E /* PDFStreamParser.h */,
+				78DC807007039E1000EE7C6E /* PDFStreamParser.m */,
+				789083C206FE1EB200F968F4 /* PDFParsingProtocol.h */,
+				789083C306FE1EB200F968F4 /* PDFParsingProtocol.m */,
+				789083C406FE1EB200F968F4 /* PDFParsingProtocolDebug.h */,
+				787BA66906FE22E300DEAD3F /* PDFParsingVisitorProtocol.h */,
+				787BA66A06FE22E300DEAD3F /* PDFParsingVisitorProtocol.m */,
+				78DC79CE0700DBDF00EE7C6E /* LOG_PDFPARSING_CALLBACKS_IMP.h */,
+				789083BA06FE1EB200F968F4 /* PDFLexer.h */,
+				789083BB06FE1EB200F968F4 /* PDFLexer.m */,
+				787BA67606FE296E00DEAD3F /* PDFLexerTokenEnumerator.h */,
+				787BA67706FE296E00DEAD3F /* PDFLexerTokenEnumerator.m */,
+				7831434306FE3051001FF99D /* PDFLexer-Ragel.rh */,
+				7896C00306FE3E71004CD99E /* PDFLexer-Ragel.rl */,
+				78DC7EFF070385B600EE7C6E /* PDFStreamLexer.h */,
+				78DC7F00070385B600EE7C6E /* PDFStreamLexer.m */,
+				78DC7F0F070388B000EE7C6E /* PDFStreamLexer-Ragel.rh */,
+				78DC7EFC0703857000EE7C6E /* PDFStreamLexer-Ragel.rl */,
+				7890842F06FE1F1000F968F4 /* PDF Objects */,
+			);
+			name = "PDF Classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7809E1840722E24500DA9915 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7809E1990722E28E00DA9915 /* AIDocument-Ragel.h in Headers */,
+				8EA1D446083A8E6400E9D4F7 /* AIDocument-Ragel1.h in Headers */,
+				8EE0F83309F1ED6A002EF838 /* AIDocument-Ragel2.h in Headers */,
+				7809E19A0722E28F00DA9915 /* AIDocument-Ragel3.h in Headers */,
+				7809E1A00722E29800DA9915 /* AIDocument-Ragel4.h in Headers */,
+				7809E19D0722E29600DA9915 /* AIDocument.h in Headers */,
+				7809E19E0722E29700DA9915 /* grid_lines.h in Headers */,
+				7809E1AF0722E2BF00DA9915 /* PDFLexerTokenEnumerator.h in Headers */,
+				7809E1B10722E2C000DA9915 /* PDFLexer.h in Headers */,
+				7809E1B20722E2C100DA9915 /* LOG_PDFPARSING_CALLBACKS_IMP.h in Headers */,
+				7809E1B40722E2C200DA9915 /* PDFParsingVisitorProtocol.h in Headers */,
+				7809E1B50722E2C300DA9915 /* PDFParsingProtocolDebug.h in Headers */,
+				7809E1B70722E2C400DA9915 /* PDFParsingProtocol.h in Headers */,
+				7809E1B90722E2C600DA9915 /* PDFStreamParser.h in Headers */,
+				7809E1BB0722E2C700DA9915 /* PDFParser.h in Headers */,
+				7809E1BD0722E2C900DA9915 /* PDFDocument.h in Headers */,
+				7809E1BE0722E2D900DA9915 /* BDAlias.h in Headers */,
+				7809E1C00722E2DD00DA9915 /* UKKQueue.h in Headers */,
+				7809E1C70722E31E00DA9915 /* NSMutableArray+StackOperations.h in Headers */,
+				7809E3430722F26100DA9915 /* layerlinkd_LC_Prefix.pch in Headers */,
+				7809E4230722F37400DA9915 /* PDFText.h in Headers */,
+				7809E4250722F37500DA9915 /* PDFInlineImage.h in Headers */,
+				7809E4270722F37600DA9915 /* PDFOperator.h in Headers */,
+				7809E4290722F37800DA9915 /* PDFObjects.h in Headers */,
+				7809E42A0722F37900DA9915 /* PDFObject.h in Headers */,
+				7809E42C0722F37A00DA9915 /* PDFNull.h in Headers */,
+				7809E42E0722F37C00DA9915 /* PDFArray.h in Headers */,
+				7809E4300722F37E00DA9915 /* PDFBoolean.h in Headers */,
+				7809E4320722F37F00DA9915 /* PDFComment.h in Headers */,
+				7809E4340722F38100DA9915 /* PDFDictionary.h in Headers */,
+				7809E4360722F38200DA9915 /* PDFIndirectObject.h in Headers */,
+				7809E4380722F38300DA9915 /* PDFIntegerNumber.h in Headers */,
+				7809E43A0722F38500DA9915 /* PDFName.h in Headers */,
+				7809E43C0722F38700DA9915 /* PDFObjectReference.h in Headers */,
+				7809E43E0722F38800DA9915 /* PDFRealNumber.h in Headers */,
+				7809E4400722F38D00DA9915 /* PDFStream.h in Headers */,
+				7809E4420722F38E00DA9915 /* PDFStreamData.h in Headers */,
+				7809E4440722F38F00DA9915 /* PDFString.h in Headers */,
+				7809E4460722F39200DA9915 /* PDFToken.h in Headers */,
+				7809E4480722F39300DA9915 /* PDFTrailer.h in Headers */,
+				7809E44A0722F39500DA9915 /* PDFXref.h in Headers */,
+				7809E44C0722F39700DA9915 /* PDFXrefItem.h in Headers */,
+				7809E5190722FB0B00DA9915 /* LayerLink.h in Headers */,
+				7813D6A507270DB3004036F1 /* ozxml.h in Headers */,
+				8EE0F83509F1ED88002EF838 /* PDFStreamLexer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7809E2320722E4B500DA9915 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7809E33A0722F20100DA9915 /* layerlinkd_Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1107270486CEB800E47090 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1107280486CEB800E47090 /* LayerLink_Prefix.pch in Headers */,
+				789083F206FE1EB200F968F4 /* PDFArray.h in Headers */,
+				789083F406FE1EB200F968F4 /* PDFBoolean.h in Headers */,
+				789083F606FE1EB200F968F4 /* PDFComment.h in Headers */,
+				789083F806FE1EB200F968F4 /* PDFDictionary.h in Headers */,
+				789083FC06FE1EB200F968F4 /* PDFIndirectObject.h in Headers */,
+				789083FE06FE1EB200F968F4 /* PDFIntegerNumber.h in Headers */,
+				7890840606FE1EB200F968F4 /* PDFName.h in Headers */,
+				7890840806FE1EB200F968F4 /* PDFObjectReference.h in Headers */,
+				7890840C06FE1EB200F968F4 /* PDFParsingProtocol.h in Headers */,
+				7890840E06FE1EB200F968F4 /* PDFParsingProtocolDebug.h in Headers */,
+				7890840F06FE1EB200F968F4 /* PDFRealNumber.h in Headers */,
+				7890841106FE1EB200F968F4 /* PDFStream.h in Headers */,
+				7890841306FE1EB200F968F4 /* PDFStreamData.h in Headers */,
+				7890841506FE1EB200F968F4 /* PDFString.h in Headers */,
+				7890841706FE1EB200F968F4 /* PDFToken.h in Headers */,
+				7890841906FE1EB200F968F4 /* PDFTrailer.h in Headers */,
+				7890841B06FE1EB200F968F4 /* PDFXref.h in Headers */,
+				7890841D06FE1EB200F968F4 /* PDFXrefItem.h in Headers */,
+				787BA66B06FE22E300DEAD3F /* PDFParsingVisitorProtocol.h in Headers */,
+				787BA67406FE266200DEAD3F /* NSMutableArray+StackOperations.h in Headers */,
+				7896C05E06FE42E4004CD99E /* PDFLexerTokenEnumerator.h in Headers */,
+				7896C06006FE42E5004CD99E /* PDFLexer.h in Headers */,
+				7896C08306FE4573004CD99E /* PDFDocument.h in Headers */,
+				7896C0DD06FE4727004CD99E /* PDFParser.h in Headers */,
+				7802DBE206FE4CD300D68E00 /* PDFObjects.h in Headers */,
+				7802DCF80700986600D68E00 /* PDFObject.h in Headers */,
+				7802DD560700A44C00D68E00 /* PDFNull.h in Headers */,
+				78DC79CF0700DBDF00EE7C6E /* LOG_PDFPARSING_CALLBACKS_IMP.h in Headers */,
+				78DC7EBE0703824400EE7C6E /* PDFOperator.h in Headers */,
+				78DC807107039E1000EE7C6E /* PDFStreamParser.h in Headers */,
+				78DC82AE0706246700EE7C6E /* PDFInlineImage.h in Headers */,
+				78DC82D9070628C800EE7C6E /* PDFText.h in Headers */,
+				78F4FE4907073D33000D72D1 /* AIDocument.h in Headers */,
+				78F4FE85070743A1000D72D1 /* AIDocument-Ragel4.h in Headers */,
+				78F4FE87070743A2000D72D1 /* AIDocument-Ragel3.h in Headers */,
+				78F4FE8B070743A4000D72D1 /* AIDocument-Ragel1.h in Headers */,
+				78F4FE8D070743A5000D72D1 /* AIDocument-Ragel.h in Headers */,
+				78F406CC070B6137000D72D1 /* BDAlias.h in Headers */,
+				78AA61040711FF9800392C23 /* LayerLink.h in Headers */,
+				7857C6960716141A009F2D06 /* UKKQueue.h in Headers */,
+				78F216C00721A6BD008262BA /* grid_lines.h in Headers */,
+				789A1EE80723440F00D18E70 /* UKUpdateChecker.h in Headers */,
+				8E3BBCB10823107E003C8BDD /* PDFStreamLexer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7809E1880722E24500DA9915 /* layerlinkd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E91CC3009F1CFDC00F5A8AC /* Build configuration list for PBXNativeTarget "layerlinkd" */;
+			buildPhases = (
+				7809E1840722E24500DA9915 /* Headers */,
+				7809E1850722E24500DA9915 /* Resources */,
+				7809E1860722E24500DA9915 /* Sources */,
+				7809E1870722E24500DA9915 /* Frameworks */,
+			);
+			buildRules = (
+				8EE0F80509F1EB68002EF838 /* PBXBuildRule */,
+				8EE0F80409F1EB43002EF838 /* PBXBuildRule */,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(SYSTEM_DEVELOPER_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = layerlinkd_LC_Prefix.pch;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RagelSources\"";
+				INFOPLIST_FILE = "layerlinkd-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = layerlinkd_LC;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+			};
+			dependencies = (
+			);
+			name = layerlinkd;
+			productName = layerlinkd;
+			productReference = 7809E1890722E24500DA9915 /* layerlinkd_LC.bundle */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>layerlinkd</string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>com.MySoftwareCompany.layerlinkd</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string></string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.0d1</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.bundle";
+		};
+		7809E2310722E4B500DA9915 /* LicenseControlled LayerLink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E91CC3609F1CFDC00F5A8AC /* Build configuration list for PBXNativeTarget "LicenseControlled LayerLink" */;
+			buildPhases = (
+				8EFA49970843A8A100D22EC1 /* Create ePI file */,
+				7809E2320722E4B500DA9915 /* Headers */,
+				7809E25E0722E4B500DA9915 /* Resources */,
+				7809E2620722E4B500DA9915 /* Sources */,
+				7809E28E0722E4B500DA9915 /* Frameworks */,
+				7809E2940722E4B500DA9915 /* CopyFiles */,
+				7809E2EF0722E9A900DA9915 /* ShellScript */,
+				7809E2FD0722EC3F00DA9915 /* ShellScript */,
+				8EF830CD083C3E650089191A /* CopyFiles */,
+				8EFA49AC0843DEBE00D22EC1 /* CopyFiles */,
+			);
+			buildRules = (
+				7809E2960722E4B500DA9915 /* PBXBuildRule */,
+				7809E2970722E4B500DA9915 /* PBXBuildRule */,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(SYSTEM_DEVELOPER_DIR)/Frameworks",
+				);
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = layerlinkd_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = LCinfo.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				LICENSING_CONTROL_ON = YES;
+				OTHER_CFLAGS = "-fobjc-exceptions";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = layerlinkd;
+				SECTORDER_FLAGS = "";
+				TEST_AFTER_BUILD = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			dependencies = (
+				7809E2A10722E59D00DA9915 /* PBXTargetDependency */,
+			);
+			name = "LicenseControlled LayerLink";
+			productInstallPath = "$(HOME)/Applications";
+			productName = LayerLink;
+			productReference = 7809E2980722E4B500DA9915 /* layerlinkd.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D1107260486CEB800E47090 /* LayerLink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E91CC2A09F1CFDC00F5A8AC /* Build configuration list for PBXNativeTarget "LayerLink" */;
+			buildPhases = (
+				8D1107270486CEB800E47090 /* Headers */,
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				78C8BCAF07207139006C4379 /* CopyFiles */,
+			);
+			buildRules = (
+				8EE0F77F09F1D2B8002EF838 /* PBXBuildRule */,
+				8EE0F77B09F1D27B002EF838 /* PBXBuildRule */,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(SYSTEM_DEVELOPER_DIR)/Frameworks",
+				);
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LayerLink_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RagelSources\"";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-fobjc-exceptions";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = LayerLink;
+				SECTORDER_FLAGS = "";
+				TEST_AFTER_BUILD = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			dependencies = (
+			);
+			name = LayerLink;
+			productInstallPath = "$(HOME)/Applications";
+			productName = LayerLink;
+			productReference = 8D1107320486CEB800E47090 /* LayerLink.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 8E91CC3C09F1CFDC00F5A8AC /* Build configuration list for PBXProject "LayerLink" */;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				SDKROOT = /Developer/SDKs/MacOSX10.3.9.sdk;
+			};
+			buildStyles = (
+				4A9504CCFFE6A4B311CA0CBA /* Development */,
+				4A9504CDFFE6A4B311CA0CBA /* Deployment */,
+				8EFA499D0843AF9700D22EC1 /* Deployment NFR */,
+				E9AD241B056E4CBD00C89394 /* Test */,
+			);
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* LayerLink */;
+			projectDirPath = "";
+			targets = (
+				8D1107260486CEB800E47090 /* LayerLink */,
+				7809E2310722E4B500DA9915 /* LicenseControlled LayerLink */,
+				7809E1880722E24500DA9915 /* layerlinkd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7809E1850722E24500DA9915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE0F80D09F1ECAE002EF838 /* AIDocument-Ragel.rl in Resources */,
+				8EE0F81009F1ECBB002EF838 /* AIDocument-Ragel3.rl in Resources */,
+				8EE0F81109F1ECBC002EF838 /* AIDocument-Ragel2.rl in Resources */,
+				8EE0F81309F1ECDC002EF838 /* PDFLexer-Ragel.rh in Resources */,
+				8EE0F81409F1ECDC002EF838 /* PDFLexer-Ragel.rl in Resources */,
+				8EE0F81609F1ECE2002EF838 /* PDFStreamLexer-Ragel.rl in Resources */,
+				8EE0F83A09F1EF6C002EF838 /* PDFStreamLexer-Ragel.rh in Resources */,
+				8EE0F91D09F20975002EF838 /* AIDocument-Ragel1.rl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7809E25E0722E4B500DA9915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7809E25F0722E4B500DA9915 /* MainMenu.nib in Resources */,
+				7809E2600722E4B500DA9915 /* InfoPlist.strings in Resources */,
+				7809E2C60722E6FB00DA9915 /* layerlinkd_LC.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				8EFA49AF0843DF0400D22EC1 /* version.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7809E2EF0722E9A900DA9915 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION,
+				$BUILT_PRODUCTS_DIR/LicenseControlTool.run,
+			);
+			outputPaths = (
+				$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION/Contents/MacOS/$PRODUCT_NAME,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#run LicenseControlTool to wrap application with LicenseControl\n\ntouch \"$BUILT_PRODUCTS_DIR/LicenseControlTool.run\"\n\n~/Applications/LicenseControlTool.app/Contents/MacOS/LicenseControlTool \"$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION\" ePI";
+		};
+		7809E2FD0722EC3F00DA9915 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				$BUILT_PRODUCTS_DIR/LicenseControlTool.run,
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -R \"$SOURCE_ROOT/LicenseAgreement.rtfd\" \"$BUILT_PRODUCTS_DIR/layerlinkd.app/Contents/Resources/LicenseControl/Agreements\"\n\ncp -R \"$SOURCE_ROOT/LicenseAgreement.rtfd\" \"$BUILT_PRODUCTS_DIR/layerlinkd.app/Contents/Resources/LicenseControl/Agreements/TrialLicenseAgreement.rtfd\"";
+		};
+		8EFA49970843A8A100D22EC1 /* Create ePI file */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Create ePI file";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /usr/bin/ruby;
+			shellScript = "if ENV['BUILD_STYLE'] == 'Deployment' || ENV['BUILD_STYLE'] == 'Development' then EPI = 'ePI-retail'\nelsif ENV['BUILD_STYLE'] == 'Deployment NFR' then EPI = 'ePI-nfr'\nend\n\n`cp \"$PROJECT_DIR/#{EPI}\" \"$PROJECT_DIR/ePI\"`\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7809E1860722E24500DA9915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE0F85C09F1F002002EF838 /* AIDocument-Ragel.rl in Sources */,
+				8EE0F92309F20989002EF838 /* AIDocument-Ragel1.rl in Sources */,
+				8EE0F85B09F1EFFF002EF838 /* AIDocument-Ragel2.rl in Sources */,
+				8EE0F85A09F1EFFB002EF838 /* AIDocument-Ragel3.rl in Sources */,
+				8EE0F80A09F1EC9B002EF838 /* AIDocument-Ragel4.rl in Sources */,
+				8EE0F85809F1EFE9002EF838 /* PDFStreamLexer-Ragel.rl in Sources */,
+				8EE0F85909F1EFF1002EF838 /* PDFLexer-Ragel.rl in Sources */,
+				7809E19C0722E29500DA9915 /* AIDocument.m in Sources */,
+				7809E1B00722E2BF00DA9915 /* PDFLexer.m in Sources */,
+				7809E1B30722E2C100DA9915 /* PDFParsingVisitorProtocol.m in Sources */,
+				7809E1B60722E2C400DA9915 /* PDFParsingProtocol.m in Sources */,
+				7809E1B80722E2C500DA9915 /* PDFStreamParser.m in Sources */,
+				7809E1BA0722E2C700DA9915 /* PDFParser.m in Sources */,
+				7809E1BC0722E2C800DA9915 /* PDFDocument.m in Sources */,
+				7809E1AE0722E2BE00DA9915 /* PDFLexerTokenEnumerator.m in Sources */,
+				7809E1BF0722E2DA00DA9915 /* BDAlias.m in Sources */,
+				7809E1C10722E2DE00DA9915 /* UKKQueue.m in Sources */,
+				7809E1C60722E31E00DA9915 /* NSMutableArray+StackOperations.m in Sources */,
+				7809E2BB0722E6AA00DA9915 /* main.m in Sources */,
+				7809E4240722F37400DA9915 /* PDFText.m in Sources */,
+				7809E4260722F37600DA9915 /* PDFInlineImage.m in Sources */,
+				7809E4280722F37700DA9915 /* PDFOperator.m in Sources */,
+				7809E42B0722F37900DA9915 /* PDFObject.m in Sources */,
+				7809E42D0722F37B00DA9915 /* PDFNull.m in Sources */,
+				7809E42F0722F37D00DA9915 /* PDFArray.m in Sources */,
+				7809E4310722F37E00DA9915 /* PDFBoolean.m in Sources */,
+				7809E4330722F38000DA9915 /* PDFComment.m in Sources */,
+				7809E4350722F38100DA9915 /* PDFDictionary.m in Sources */,
+				7809E4370722F38200DA9915 /* PDFIndirectObject.m in Sources */,
+				7809E4390722F38400DA9915 /* PDFIntegerNumber.m in Sources */,
+				7809E43B0722F38600DA9915 /* PDFName.m in Sources */,
+				7809E43D0722F38700DA9915 /* PDFObjectReference.m in Sources */,
+				7809E43F0722F38900DA9915 /* PDFRealNumber.m in Sources */,
+				7809E4410722F38D00DA9915 /* PDFStream.m in Sources */,
+				7809E4430722F38F00DA9915 /* PDFStreamData.m in Sources */,
+				7809E4450722F39000DA9915 /* PDFString.m in Sources */,
+				7809E4470722F39200DA9915 /* PDFToken.m in Sources */,
+				7809E4490722F39400DA9915 /* PDFTrailer.m in Sources */,
+				7809E44B0722F39600DA9915 /* PDFXref.m in Sources */,
+				7809E44D0722F39700DA9915 /* PDFXrefItem.m in Sources */,
+				7809E5180722FB0B00DA9915 /* LayerLink.m in Sources */,
+				8EE0F83409F1ED88002EF838 /* PDFStreamLexer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7809E2620722E4B500DA9915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7809E2A80722E67100DA9915 /* LCmain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78DC7F10070388B000EE7C6E /* PDFStreamLexer-Ragel.rh in Sources */,
+				78DC7F4B070389B600EE7C6E /* PDFStreamLexer-Ragel.rl in Sources */,
+				7831439106FE3393001FF99D /* PDFLexer-Ragel.rh in Sources */,
+				7896C00406FE3E71004CD99E /* PDFLexer-Ragel.rl in Sources */,
+				78F4FE84070743A1000D72D1 /* AIDocument-Ragel4.rl in Sources */,
+				78F4FE86070743A2000D72D1 /* AIDocument-Ragel3.rl in Sources */,
+				78F4FE8A070743A4000D72D1 /* AIDocument-Ragel1.rl in Sources */,
+				78F4FE8C070743A4000D72D1 /* AIDocument-Ragel.rl in Sources */,
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				789083F306FE1EB200F968F4 /* PDFArray.m in Sources */,
+				789083F506FE1EB200F968F4 /* PDFBoolean.m in Sources */,
+				789083F706FE1EB200F968F4 /* PDFComment.m in Sources */,
+				789083F906FE1EB200F968F4 /* PDFDictionary.m in Sources */,
+				789083FD06FE1EB200F968F4 /* PDFIndirectObject.m in Sources */,
+				789083FF06FE1EB200F968F4 /* PDFIntegerNumber.m in Sources */,
+				7890840706FE1EB200F968F4 /* PDFName.m in Sources */,
+				7890840906FE1EB200F968F4 /* PDFObjectReference.m in Sources */,
+				7890840D06FE1EB200F968F4 /* PDFParsingProtocol.m in Sources */,
+				7890841006FE1EB200F968F4 /* PDFRealNumber.m in Sources */,
+				7890841206FE1EB200F968F4 /* PDFStream.m in Sources */,
+				7890841406FE1EB200F968F4 /* PDFStreamData.m in Sources */,
+				7890841606FE1EB200F968F4 /* PDFString.m in Sources */,
+				7890841806FE1EB200F968F4 /* PDFToken.m in Sources */,
+				7890841A06FE1EB200F968F4 /* PDFTrailer.m in Sources */,
+				7890841C06FE1EB200F968F4 /* PDFXref.m in Sources */,
+				7890841E06FE1EB200F968F4 /* PDFXrefItem.m in Sources */,
+				787BA66C06FE22E300DEAD3F /* PDFParsingVisitorProtocol.m in Sources */,
+				787BA67506FE266200DEAD3F /* NSMutableArray+StackOperations.m in Sources */,
+				7896C05D06FE42E3004CD99E /* PDFLexerTokenEnumerator.m in Sources */,
+				7896C05F06FE42E4004CD99E /* PDFLexer.m in Sources */,
+				7896C08406FE4573004CD99E /* PDFDocument.m in Sources */,
+				7896C0DE06FE4728004CD99E /* PDFParser.m in Sources */,
+				7802DCF90700986600D68E00 /* PDFObject.m in Sources */,
+				7802DD570700A44C00D68E00 /* PDFNull.m in Sources */,
+				78DC7EBF0703824400EE7C6E /* PDFOperator.m in Sources */,
+				78DC807207039E1000EE7C6E /* PDFStreamParser.m in Sources */,
+				78DC82AF0706246700EE7C6E /* PDFInlineImage.m in Sources */,
+				78DC82DA070628C800EE7C6E /* PDFText.m in Sources */,
+				78F4FE4A07073D33000D72D1 /* AIDocument.m in Sources */,
+				78F406CD070B6137000D72D1 /* BDAlias.m in Sources */,
+				78AA61050711FF9800392C23 /* LayerLink.m in Sources */,
+				7857C6970716141B009F2D06 /* UKKQueue.m in Sources */,
+				8E3BBCB00823107C003C8BDD /* PDFStreamLexer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7809E2A10722E59D00DA9915 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7809E1880722E24500DA9915 /* layerlinkd */;
+			targetProxy = 7809E2A00722E59D00DA9915 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		789A1EE50723433300D18E70 /* UKUpdateChecker.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				789A1EE60723433300D18E70 /* English */,
+			);
+			name = UKUpdateChecker.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E91CC2B09F1CFDC00F5A8AC /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(SYSTEM_DEVELOPER_DIR)/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LayerLink_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RagelSources\"";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "-fobjc-exceptions";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = LayerLink;
+				SECTORDER_FLAGS = "";
+				TEST_AFTER_BUILD = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		8E91CC2C09F1CFDC00F5A8AC /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(SYSTEM_DEVELOPER_DIR)/Frameworks",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LayerLink_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RagelSources\"";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-fobjc-exceptions";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = LayerLink;
+				SECTORDER_FLAGS = "";
+				TEST_AFTER_BUILD = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		8E91CC2D09F1CFDC00F5A8AC /* Deployment NFR */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(SYSTEM_DEVELOPER_DIR)/Frameworks",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LayerLink_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RagelSources\"";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-fobjc-exceptions";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = LayerLink;
+				SECTORDER_FLAGS = "";
+				TEST_AFTER_BUILD = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = "Deployment NFR";
+		};
+		8E91CC2E09F1CFDC00F5A8AC /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(SYSTEM_DEVELOPER_DIR)/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LayerLink_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RagelSources\"";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "-fobjc-exceptions";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = LayerLink;
+				SECTORDER_FLAGS = "";
+				TEST_AFTER_BUILD = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Test;
+		};
+		8E91CC2F09F1CFDC00F5A8AC /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(SYSTEM_DEVELOPER_DIR)/Frameworks",
+				);
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LayerLink_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RagelSources\"";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-fobjc-exceptions";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = LayerLink;
+				SECTORDER_FLAGS = "";
+				TEST_AFTER_BUILD = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		8E91CC3109F1CFDC00F5A8AC /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(SYSTEM_DEVELOPER_DIR)/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = layerlinkd_LC_Prefix.pch;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RagelSources\"";
+				INFOPLIST_FILE = "layerlinkd-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = layerlinkd_LC;
+				SECTORDER_FLAGS = "";
+				TEST_AFTER_BUILD = NO;
+				WARNING_CFLAGS = "-Wmost";
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		8E91CC3209F1CFDC00F5A8AC /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(SYSTEM_DEVELOPER_DIR)/Frameworks",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = layerlinkd_LC_Prefix.pch;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RagelSources\"";
+				INFOPLIST_FILE = "layerlinkd-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = layerlinkd_LC;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		8E91CC3309F1CFDC00F5A8AC /* Deployment NFR */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(SYSTEM_DEVELOPER_DIR)/Frameworks",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = layerlinkd_LC_Prefix.pch;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RagelSources\"";
+				INFOPLIST_FILE = "layerlinkd-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = layerlinkd_LC;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+				ZERO_LINK = NO;
+			};
+			name = "Deployment NFR";
+		};
+		8E91CC3409F1CFDC00F5A8AC /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(SYSTEM_DEVELOPER_DIR)/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = layerlinkd_LC_Prefix.pch;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RagelSources\"";
+				INFOPLIST_FILE = "layerlinkd-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = layerlinkd_LC;
+				SECTORDER_FLAGS = "";
+				TEST_AFTER_BUILD = YES;
+				WARNING_CFLAGS = "-Wmost";
+				ZERO_LINK = NO;
+			};
+			name = Test;
+		};
+		8E91CC3509F1CFDC00F5A8AC /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(SYSTEM_DEVELOPER_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = layerlinkd_LC_Prefix.pch;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RagelSources\"";
+				INFOPLIST_FILE = "layerlinkd-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = layerlinkd_LC;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+			};
+			name = Default;
+		};
+		8E91CC3709F1CFDC00F5A8AC /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(SYSTEM_DEVELOPER_DIR)/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = layerlinkd_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = LCinfo.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				LICENSING_CONTROL_ON = YES;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "-fobjc-exceptions";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = layerlinkd;
+				SECTORDER_FLAGS = "";
+				TEST_AFTER_BUILD = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		8E91CC3809F1CFDC00F5A8AC /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(SYSTEM_DEVELOPER_DIR)/Frameworks",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = layerlinkd_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = LCinfo.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				LICENSING_CONTROL_ON = YES;
+				OTHER_CFLAGS = "-fobjc-exceptions";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = layerlinkd;
+				SECTORDER_FLAGS = "";
+				TEST_AFTER_BUILD = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		8E91CC3909F1CFDC00F5A8AC /* Deployment NFR */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(SYSTEM_DEVELOPER_DIR)/Frameworks",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = layerlinkd_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = LCinfo.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				LICENSING_CONTROL_ON = YES;
+				OTHER_CFLAGS = "-fobjc-exceptions";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = layerlinkd;
+				SECTORDER_FLAGS = "";
+				TEST_AFTER_BUILD = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = "Deployment NFR";
+		};
+		8E91CC3A09F1CFDC00F5A8AC /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(SYSTEM_DEVELOPER_DIR)/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = layerlinkd_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = LCinfo.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				LICENSING_CONTROL_ON = YES;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "-fobjc-exceptions";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = layerlinkd;
+				SECTORDER_FLAGS = "";
+				TEST_AFTER_BUILD = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Test;
+		};
+		8E91CC3B09F1CFDC00F5A8AC /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					"$(SYSTEM_DEVELOPER_DIR)/Frameworks",
+				);
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = layerlinkd_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = LCinfo.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				LICENSING_CONTROL_ON = YES;
+				OTHER_CFLAGS = "-fobjc-exceptions";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = layerlinkd;
+				SECTORDER_FLAGS = "";
+				TEST_AFTER_BUILD = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		8E91CC3D09F1CFDC00F5A8AC /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				SDKROOT = /Developer/SDKs/MacOSX10.3.9.sdk;
+			};
+			name = Development;
+		};
+		8E91CC3E09F1CFDC00F5A8AC /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				SDKROOT = /Developer/SDKs/MacOSX10.3.9.sdk;
+			};
+			name = Deployment;
+		};
+		8E91CC3F09F1CFDC00F5A8AC /* Deployment NFR */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				SDKROOT = /Developer/SDKs/MacOSX10.3.9.sdk;
+			};
+			name = "Deployment NFR";
+		};
+		8E91CC4009F1CFDC00F5A8AC /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				SDKROOT = /Developer/SDKs/MacOSX10.3.9.sdk;
+			};
+			name = Test;
+		};
+		8E91CC4109F1CFDC00F5A8AC /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				SDKROOT = /Developer/SDKs/MacOSX10.3.9.sdk;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E91CC2A09F1CFDC00F5A8AC /* Build configuration list for PBXNativeTarget "LayerLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E91CC2B09F1CFDC00F5A8AC /* Development */,
+				8E91CC2C09F1CFDC00F5A8AC /* Deployment */,
+				8E91CC2D09F1CFDC00F5A8AC /* Deployment NFR */,
+				8E91CC2E09F1CFDC00F5A8AC /* Test */,
+				8E91CC2F09F1CFDC00F5A8AC /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		8E91CC3009F1CFDC00F5A8AC /* Build configuration list for PBXNativeTarget "layerlinkd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E91CC3109F1CFDC00F5A8AC /* Development */,
+				8E91CC3209F1CFDC00F5A8AC /* Deployment */,
+				8E91CC3309F1CFDC00F5A8AC /* Deployment NFR */,
+				8E91CC3409F1CFDC00F5A8AC /* Test */,
+				8E91CC3509F1CFDC00F5A8AC /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		8E91CC3609F1CFDC00F5A8AC /* Build configuration list for PBXNativeTarget "LicenseControlled LayerLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E91CC3709F1CFDC00F5A8AC /* Development */,
+				8E91CC3809F1CFDC00F5A8AC /* Deployment */,
+				8E91CC3909F1CFDC00F5A8AC /* Deployment NFR */,
+				8E91CC3A09F1CFDC00F5A8AC /* Test */,
+				8E91CC3B09F1CFDC00F5A8AC /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		8E91CC3C09F1CFDC00F5A8AC /* Build configuration list for PBXProject "LayerLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E91CC3D09F1CFDC00F5A8AC /* Development */,
+				8E91CC3E09F1CFDC00F5A8AC /* Deployment */,
+				8E91CC3F09F1CFDC00F5A8AC /* Deployment NFR */,
+				8E91CC4009F1CFDC00F5A8AC /* Test */,
+				8E91CC4109F1CFDC00F5A8AC /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,24 @@
+			<missingDuration>0.03333333333</missingDuration>
+			<creationDuration>1</creationDuration>
+			<flags>0</flags>
+			<timing in="0" out="4" offset="0"/>
+			<foldFlags>0</foldFlags>
+			<baseFlags>524304</baseFlags>
+			<parameter name="Properties" id="1" flags="4112"/>
+			<parameter name="Object" id="2" flags="4112">
+				<parameter name="Alpha Type" id="100" flags="4114">
+					<parameter name="Alpha Type" id="101" flags="65538" value="2"/>
+					<parameter name="Alpha Color" id="102" flags="4098">
+						<parameter name="Red" id="1" flags="16" value="0"/>
+						<parameter name="Green" id="2" flags="16" value="0"/>
+						<parameter name="Blue" id="3" flags="16" value="0"/>
+					</parameter>
+				</parameter>
+				<parameter name="Invert Alpha" id="103" flags="2" value="0"/>
+				<parameter name="Pixel Aspect Ratio" id="104" flags="0" value="1"/>
+				<parameter name="Field Dominance" id="105" flags="65538" value="0"/>
+				<parameter name="3:2 Pulldown" id="106" flags="65538" value="0"/>
+				<parameter name="Frame Rate" id="107" flags="2" value="30"/>
+				<parameter name="End Condition" id="110" flags="65554" value="0"/>
+				<parameter name="Reverse" id="111" flags="18" value="0"/>
+				<parameter name="Fixed Resolution" id="113" flags="0" value="0"/>

@@ -1,0 +1,10 @@
+		<flags>0</flags>
+		<timing in="0" out="-1" offset="0"/>
+		<foldFlags>0</foldFlags>
+		<baseFlags>524304</baseFlags>
+		<parameter name="Properties" id="1" flags="4112"/>
+		<parameter name="Object" id="2" flags="4112"/>
+	</footage>
+</scene>
+
+</ozml>

@@ -1,0 +1,23 @@
+
+	<audio name="audio layer" id="10013">
+		<scenenode name="Master" id="10014" factoryID="2">
+			<flags>0</flags>
+			<timing in="0" out="300" offset="0"/>
+			<foldFlags>0</foldFlags>
+			<baseFlags>524304</baseFlags>
+			<parameter name="Properties" id="1" flags="4112"/>
+			<parameter name="Object" id="2" flags="4112">
+				<parameter name="Mute" id="100" flags="18" value="0"/>
+				<parameter name="Level" id="101" flags="25165840" value="1"/>
+				<parameter name="Pan" id="102" flags="16777232" value="0"/>
+			</parameter>
+		</scenenode>
+		<flags>0</flags>
+		<timing in="0" out="-1" offset="0"/>
+		<foldFlags>0</foldFlags>
+		<baseFlags>524304</baseFlags>
+		<parameter name="Properties" id="1" flags="4112"/>
+		<parameter name="Object" id="2" flags="4112"/>
+	</audio>
+
+	<footage name="Footage Layer" id="10000">

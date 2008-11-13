@@ -1,0 +1,66 @@
+			<parameter name="Properties" id="1" flags="4112">
+				<parameter name="Transform" id="100" flags="4112">
+					<parameter name="Position" id="101" flags="4112">
+						<parameter name="X" id="1" flags="16" value="0"/>
+						<parameter name="Y" id="2" flags="16" value="0"/>
+					</parameter>
+					<parameter name="Rotation" id="102" flags="16" value="0"/>
+					<parameter name="Velocity" id="103" flags="69650">
+						<parameter name="X" id="1" flags="16" value="0"/>
+						<parameter name="Y" id="2" flags="16" value="0"/>
+					</parameter>
+					<parameter name="Rotational Velocity" id="104" flags="65554" value="0"/>
+					<parameter name="Scale" id="105" flags="4112">
+						<parameter name="X" id="1" flags="16" value="1"/>
+						<parameter name="Y" id="2" flags="16" value="1"/>
+					</parameter>
+					<parameter name="Shear" id="106" flags="4112">
+						<parameter name="X" id="1" flags="16" value="0"/>
+						<parameter name="Y" id="2" flags="16" value="0"/>
+					</parameter>
+					<parameter name="Anchor Point" id="107" flags="4112">
+						<parameter name="X" id="1" flags="16" value="0"/>
+						<parameter name="Y" id="2" flags="16" value="0"/>
+					</parameter>
+				</parameter>
+				<parameter name="Blending" id="200" flags="4112">
+					<parameter name="Opacity" id="202" flags="16" value="1"/>
+					<parameter name="Blend Mode" id="203" flags="65552" value="0"/>
+					<parameter name="Preserve Opacity" id="217" flags="16" value="0"/>
+				</parameter>
+				<parameter name="Drop Shadow" id="208" flags="167952">
+					<foldFlags>15</foldFlags>
+					<parameter name="Color" id="210" flags="4112">
+						<parameter name="Red" id="1" flags="16" value="0"/>
+						<parameter name="Green" id="2" flags="16" value="0"/>
+						<parameter name="Blue" id="3" flags="16" value="0"/>
+					</parameter>
+					<parameter name="Opacity" id="211" flags="16" value="0.75"/>
+					<parameter name="Blur" id="213" flags="16" value="5"/>
+					<parameter name="Distance" id="212" flags="16" value="5"/>
+					<parameter name="Angle" id="214" flags="16" value="5.497787144"/>
+				</parameter>
+				<parameter name="Four Corner" id="207" flags="167936">
+					<parameter name="Bottom Left" id="1" flags="4112">
+						<parameter name="X" id="1" flags="16" value="0"/>
+						<parameter name="Y" id="2" flags="16" value="0"/>
+					</parameter>
+					<parameter name="Bottom Right" id="2" flags="4112">
+						<parameter name="X" id="1" flags="16" value="0"/>
+						<parameter name="Y" id="2" flags="16" value="0"/>
+					</parameter>
+					<parameter name="Top Right" id="3" flags="4112">
+						<parameter name="X" id="1" flags="16" value="0"/>
+						<parameter name="Y" id="2" flags="16" value="0"/>
+					</parameter>
+					<parameter name="Top Left" id="4" flags="4112">
+						<parameter name="X" id="1" flags="16" value="0"/>
+						<parameter name="Y" id="2" flags="16" value="0"/>
+					</parameter>
+				</parameter>
+				<parameter name="Crop" id="216" flags="167952">
+					<parameter name="Left" id="1" flags="16" value="0"/>
+					<parameter name="Right" id="2" flags="16" value="0"/>
+					<parameter name="Bottom" id="3" flags="16" value="0"/>
+					<parameter name="Top" id="4" flags="16" value="0"/>
+				</parameter>

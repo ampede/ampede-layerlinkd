@@ -1,0 +1,10 @@
+//
+// Prefix header for all source files of the 'LicenseControlled LayerLink' target in the 'LayerLink' project
+//
+
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
+
+#define LICENSING_CONTROL_ON

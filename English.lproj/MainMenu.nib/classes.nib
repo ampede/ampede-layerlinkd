@@ -1,0 +1,16 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = LayerLink; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = Startup; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = TestMe; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {checkForUpdates = id; takeBoolFromObject = id; }; 
+            CLASS = UKUpdateChecker; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {prefsButton = NSButton; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

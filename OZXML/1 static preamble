@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ozxmlscene>
+<ozml version="1.0">
+
+<factory id="1" uuid="66fc0d6af6a911d6a7a7000393670732">
+	<description>Image</description>
+	<manufacturer>Apple</manufacturer>
+	<version>1</version>
+</factory>
+
+<factory id="2" uuid="6b337e9c21aa11d7a08700039375d2ba">
+	<description>Master</description>
+	<manufacturer>Apple</manufacturer>
+	<version>1</version>
+</factory>
+
+<build>103BE.11279</build>
+
+<scene>
+	<sceneSettings>
+		<width>720</width>
+		<height>480</height>
+		<duration>300</duration>
+		<frameRate>30</frameRate>
+		<NTSC>1</NTSC>
+		<channels>4</channels>
+		<channelDepth>24</channelDepth>
+		<pixelAspectRatio>0.8888888889</pixelAspectRatio>
+		<backgroundColor red="0" green="0" blue="0" alpha="0"/>
+		<audioChannels>2</audioChannels>
+		<audioBitsPerSample>32</audioBitsPerSample>
+		<audioSampleRate>48000</audioSampleRate>
+		<fieldRenderingMode>2</fieldRenderingMode>
+		<renderMethod>0</renderMethod>
+		<doMotionBlur>0</doMotionBlur>
+		<motionBlurSamples>8</motionBlurSamples>
+		<motionBlurDuration>1</motionBlurDuration>
+		<startTimecode>0</startTimecode>
+		<doRenderFields>0</doRenderFields>
+	</sceneSettings>
+	<currentFrame>0</currentFrame>
+	<timeRange offset="0" duration="300"/>
+	<playRange offset="0" duration="300"/>
+	<flags>1</flags>
+	<audioTracks>0</audioTracks>
+	<timemarkerset/>
+	<guideset/>
+	<curvesets selected="1"/>

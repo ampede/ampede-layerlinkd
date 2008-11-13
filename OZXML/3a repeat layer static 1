@@ -1,0 +1,10 @@
+			<footageLayer>0</footageLayer>
+			<numberOfPages>1</numberOfPages>
+			<override>0</override>
+			<aspectRatio>0.8888888889</aspectRatio>
+			<ignoreBehaviorsBeforeID>0</ignoreBehaviorsBeforeID>
+			<flags>0</flags>
+			<timing in="0" out="299" offset="-1800"/>
+			<timemarkerset/>
+			<foldFlags>16384</foldFlags>
+			<baseFlags>524304</baseFlags>
